@@ -6,9 +6,10 @@ import PackageDescription
 let package = Package(
     name: "AckGen",
     platforms: [
-        .macOS(.v10_15),
-        .iOS(.v13),
-        .watchOS(.v6)
+        .iOS("15"),
+        .macOS("13.1"),
+        .tvOS("15"),
+        .watchOS(.v7),
     ],
     products: [
         .executable(name: "ackgen", targets: ["AckGenCLI"]),
